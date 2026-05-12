@@ -18,3 +18,9 @@ View your app in AI Studio: https://ai.studio/apps/7f46997f-79f8-4c36-80a1-ea269
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+
+## Discord OAuth / Invite URL override
+
+If you already have a Discord OAuth or bot invite URL, set `DISCORD_AUTH_URL` in your `.env` file.
+When set, the dashboard login button will use that exact URL instead of generating one dynamically.

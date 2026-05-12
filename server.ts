@@ -83,6 +83,12 @@ async function startServer() {
 
   // OAuth URL
   app.get("/api/auth/url", (req, res) => {
+    const configuredAuthUrl = process.env.DISCORD_AUTH_URL;
+
+    if (configuredAuthUrl) {
+      return res.json({ url: configuredAuthUrl });
+    }
+
     const clientId = process.env.DISCORD_CLIENT_ID;
     const redirectUri = `${process.env.APP_URL || "http://localhost:3000"}/api/auth/callback`;
     
