@@ -1,0 +1,6 @@
+{
+  "name": "Discord Control Center",
+  "description": "A comprehensive dashboard for managing and controlling your Discord bot, featuring real-time logs, server management, and bot status monitoring.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
